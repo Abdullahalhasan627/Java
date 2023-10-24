@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dow {
+    display: flex;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color: red;
+    transition: .7s ease;
+}
+
+.dow:hover {
+    color: red;
+    background-color: #ddd;
+}
+
+.dow:active {
+    font-size: large;
+}
+
+button::selection {
+    color: green;
+}

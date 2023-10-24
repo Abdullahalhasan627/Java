@@ -1,0 +1,174 @@
+> console
+
+
+> 200 + 200     #  حساب أي معادله رياضية
+400
+
+
+> document.write("<h1> Hello World!</h1>")     #  أكتب أكواد (Html)
+
+> document.querySelector("h1").style.color = 'red'    #  أكتب أكواد (Css)
+
+> window # show the founction of Javascript.     #  يظهر لك كل دوال و أمامر لغه (JavaScript)
+
+window.onload = function() {   //  هذه لا تعمل الا اذا فعلت تحديث للصفحة الويب
+	document.querySelector(".head").style.color = 'red';
+
+};
+
+console.log("Hello Console!");  // هذه للكتابة داخل صفحة ال Console in Edge DevTools
+
+window.alert("Hello From JS");  // هذه تعمل على أظهار رسالة للمستخدم لمره واحده
+
+
+Web API
+
+console.error("Error")  //  تعمل على طباعه ان هناك خط وسوف يلك أين هو الخطء بالضبط في أي ملف تعمل في console only
+
+console.table(["Aboud", "Omer", "Ahamad"]);  // تستخدم لعمل جدول في ال
+
+console.log("Hello From %c JS %c File", "color: red; font-size: 20px;", "color: green; font-size: 15px;");
+// الكود السابق هو للطباعة لكن يمكنك ان تغير في لون الكلام أو الحجم أو نوع الخط الذي تريد طباعته كل ما عليك أن تكتب %c قبل الكلمه التي تريد تغيرها
+
+
+
+Data of type:
+
+Number Ex: => console.log(typeof 5000);
+Number Ex: => console.log (typeof 50.555);
+String Ex: => console.log("Abdullah");
+Object Ex: => console.log (typeof [20, 15, 10])
+Object Ex: => console.log(typeof ["aboud", "omer", "ahmad"]);
+Object Ex: => console.log(typeof {name: 'aboud', age: 17, coumtry: 'arab'});
+Boolean Ex: => console.log(typeof true);
+Boolean Ex: => console.log(typeof false);
+Boolean Ex: => console.log(typeof undefined);
+Boolean Ex: => console.log(typeof null);
+
+
+Variables:
+
+var name = "Aboud";
+var password = 12345;
+
+let name = "Abdullah;
+
+
+
+> console.log("Abdullah 'Alhasan'");   // أذا أردت أ، تطبع كلمة داخل "" أن يكونو مختلفان
+Abdullah 'Alhasan'
+
+> console.log('Abdullah "Alhasan"');
+Abdullah "Alhasan"
+
+console.log('Abdullha 'Alhasan'')  // هنا الكود لن يعمل ولكي يعمل يجب ان نعمل تجاهل لي لغه البرمجه اي تجاهل للكلمه المحجوه في لغه البرمجه وهي "
+
+لعمل تجاه للكلمات المحجوزه يجب ان تكتب خلف اي كلمة محجوه تريد تجاهلها (\)
+ \
+
+console.log("Abddullah \"Alhasan\"");   //  الأن سوف يعمل الكود لانه قبل الكلمه المحجوزه كتبنا \ وهي تعمل على تجاهلها كا كلمة محجوزه في اللغة و التعامل معها كا كلام أو حرف
+
+و أذا اردت طباعة \ هذه فا أكتبها مرتان \\ و سوف تطبع
+مفهوم هذه الحركة ( \\ ) هي انك تقول له تجاهل ال ( \ ) و تعامل معاها كا حرف
+
+أذا أر دت تطبع كلام و لكن تريد ان تجعله في أكتر من سطر أي هكذا
+
+console.log("Abdullah alhasan
+Omer alhasan");
+// هذا الكود لن يعمل لانك في السطر الاول في حاجة الى أغلاقة بي القوس ولكنك قد ضغط على ال Enter ولن يعمل لكن أذا اردت أن يعمل و يطبع الكلام سليم أكتب أخرها \ أي تجاه ضغطة ال Enter ز أكمل في شكل طبيعي و كأنك تكتب على سطر واحد
+
+
+console.log("Abdullah 'alhasan'");
+console.log('Abdullah \'alhasan\';\n\
+Omer: \'alhasan\';\n\
+Ahmad: \'alhasan\';\n\
+Tasnim: \'alhasan\';\n\
+Aboud: \'alhasan\';\n\
+Ali: \'alhasan\';\n\
+');
+
+
+console.log("The server is listening on: ",`
+
+${a}: ${100 * 1}
+${c}: ${500 * 2}
+${d}: ${1000 * 10}
+${b}: ${10000 * 10}`);
+
+Operating System:
+
+console.log(+100);   => 100
+console.log(+"100");   => 100
+console.log(+"Aboud");  => Nan   //  هذا ليس داخله قيمه حتى يقوم في أرجاعها
+console.log(+"15.11");   => 15.11
+console.log(0x1F);   => 255
+console.log(+true);   => 1
+console.log(+false);  => 0
+console.log(+null);   => 0
+console.log(-"-100");  => 100
+
+العمليه المستفاده من وضع علامة ال + قبل النص أو الكلمة المحجوزه هي أرجاع قيمةالعنصر
+لنقل انك تريد جمع نص مع رقم 10 هل هذا صحيح لا لان هذا كلام وهذا رقم لكن ماذا أذا كان داخل الكلام
+أي علامه التنصيص "10" رقم فأن العمليه صيحية ان جمعتها لكن الكمبيوتر سوف يتعامل معاها
+كا نص وليس ارقام وهنا تأتي هذا الخاصية وهي ترحع قيمه العنصر
+
++true = 1;
++false = 0;
++null = 0;
++"10" = 10;
+
+
+Assignment operators:
+
+let x = 4;
+
+x += 1;  => 5
+x -= 1;  => 4
+x /= 2;  => 2
+x *= 2;  => 8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
