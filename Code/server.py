@@ -362,11 +362,3 @@ import requests
 # run_host(ip, username, password, rport, verbosity)
 
 
-import hashlib
-
-data = "Hello"
-
-hash = hashlib.blake2s(data.encode('utf-8')).hexdigest()
-
-print(hash)
-

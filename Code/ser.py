@@ -36,7 +36,7 @@
 #     try:
 
 #         type_hash_use = input("Enter th type hash: ")
-
+        
 #         def type_hash():
 #             if type_hash_use == 'md5':
 #                 return hashlib.md5(pass_line.encode('utf-8')).hexdigest()
@@ -98,7 +98,13 @@
 
 import hashlib
 
+data = "88888887"
 
+hash = hashlib.sha256(data.encode()).hexdigest()
 
+print(hash)
 
+hash = hashlib.sha256(data.encode()).hexdigest()
+
+print(hash)
 
