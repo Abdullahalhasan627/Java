@@ -96,15 +96,4 @@
 #     find_hash_file()
 
 
-import hashlib
-
-data = "88888887"
-
-hash = hashlib.sha256(data.encode()).hexdigest()
-
-print(hash)
-
-hash = hashlib.sha256(data.encode()).hexdigest()
-
-print(hash)
-
+import socket
